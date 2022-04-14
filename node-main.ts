@@ -5,7 +5,7 @@ import {compile, run} from './compiler';
 const input = process.argv[2];
 const result = compile(input);
 console.log(result);
-run(result).then((value) => {
+run(result, {}).then((value) => {
   console.log(value);
 });
 
